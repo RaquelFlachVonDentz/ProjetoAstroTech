@@ -10,15 +10,25 @@
          
           document.getElementById("resultado").innerHTML = document.getElementById("meuInput").value
         }
-    
+        function mostrarTexto() {
+  const input = document.getElementById('meuInput');
+  const resultado = document.getElementById('resultado');
+
+  const texto = input.value.trim(); 
+
+        }
+  if (texto === '') {
+    alert('O campo está vazio!');
+    return;
+  }
       </script>
   
 </head>
 <body>
-    <h1>Projeto AstroTech sistema de segurança</h1>
+    <h1>Projeto AstroTech </h1>
     <p>digite algo aqui!</p>
     <input id="meuInput" type="text">
     <button id="meuBotao" onclick="processar()">Clique Aqui</button>
-    <div id="resultado">O resultado aparecerá aqui</div>
+    <hr> <div id="resultado">O resultado aparecerá aqui</div>
 </body>
 </html>
